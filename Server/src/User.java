@@ -15,5 +15,11 @@ public class User {
         this.rank = rank;
     }
 
+    public User(){}
 
+    static Boolean register(String username, String password, String email){
+
+
+        return false;
+    }
 }
