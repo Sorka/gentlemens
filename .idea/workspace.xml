@@ -3,28 +3,8 @@
   <component name="ChangeListManager">
     <list id="2db8fdf9-177d-4a48-a235-050f880a6322" name="Default" comment="added correct gitignore (beginning with &quot;.&quot; )" />
     <list default="true" id="ca939764-176e-4bb5-a1e0-a150de46dc18" name="idea_ignoreList" comment="idea_ignoreList">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/antlr-2.7.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/cdi-api-1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/classmate-1.3.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/dom4j-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/el-api-2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/geronimo-jta_1.1_spec-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/hibernate-commons-annotations-5.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/hibernate-core-5.2.2.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/jandex-2.0.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/javassist-3.20.0-GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/javax.inject-1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/jboss-logging-3.3.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/hibernate-lib/jsr250-api-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/hibernate/Rank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Server.iml" afterPath="$PROJECT_DIR$/Server/Server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/web/index.jsp" afterPath="$PROJECT_DIR$/Server/web/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Server/src/User.java" afterPath="$PROJECT_DIR$/Server/src/hibernate/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java" afterPath="$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java" />
     </list>
     <list id="ffc9f96b-87c2-406a-928d-b43045d3f2a4" name="ignoreChangelist" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
@@ -32,6 +12,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
+    <list id="09ba8cbc-8c7d-4f12-8012-b75a8fde253c" name="New changelist" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Server.iml" afterPath="$PROJECT_DIR$/Server/Server.iml" />
     </list>
     <ignored path=".idea/misc.xml" />
     <ignored path=".idea/vcs.xml" />
@@ -77,8 +60,8 @@
       <file leaf-file-name="HibernateManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+            <state relative-caret-position="448">
+              <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +72,7 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/hibernate/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-620">
+            <state relative-caret-position="-440">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -131,8 +114,8 @@
       <list>
         <option value="$PROJECT_DIR$/gentlemens.iml" />
         <option value="$PROJECT_DIR$/Server/src/hibernate/Rank.java" />
-        <option value="$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java" />
         <option value="$PROJECT_DIR$/Server/src/hibernate/User.java" />
+        <option value="$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java" />
       </list>
     </option>
   </component>
@@ -290,10 +273,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Client/out/register.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/Server.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/gentlemens.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/RegisterServlet.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -301,8 +281,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/RegisterServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/User.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/LoginServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/LogoutServlet.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -805,11 +785,12 @@
       <changelist id="2db8fdf9-177d-4a48-a235-050f880a6322" name="Default" comment="" />
       <changelist id="ca939764-176e-4bb5-a1e0-a150de46dc18" name="idea_ignoreList" comment="" />
       <changelist id="ffc9f96b-87c2-406a-928d-b43045d3f2a4" name="ignoreChangelist" comment="" />
+      <changelist id="09ba8cbc-8c7d-4f12-8012-b75a8fde253c" name="New changelist" comment="" />
       <created>1471527975866</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471527975866</updated>
-      <workItem from="1471527978311" duration="9907000" />
+      <workItem from="1471527978311" duration="10150000" />
     </task>
     <task id="LOCAL-00001" summary="added correct gitignore (beginning with &quot;.&quot; )">
       <created>1471529228282</created>
@@ -832,11 +813,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471531217114</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added hibernate libraries, implemented register and login methodes using hibernate">
+      <created>1471538110352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1471538110352</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9907000" />
+    <option name="totallyTimeSpent" value="10150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -906,7 +894,8 @@
     <MESSAGE value="added correct gitignore (beginning with &quot;.&quot; )" />
     <MESSAGE value="added server web module" />
     <MESSAGE value="project .iml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="project .iml file" />
+    <MESSAGE value="added hibernate libraries, implemented register and login methodes using hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hibernate libraries, implemented register and login methodes using hibernate" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -984,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/hibernate/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-620">
+        <state relative-caret-position="-440">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -994,8 +983,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+        <state relative-caret-position="448">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
