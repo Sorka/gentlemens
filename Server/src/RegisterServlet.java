@@ -17,7 +17,9 @@ public class RegisterServlet extends PreServlet {
 
         Boolean success = User.register(username, password, email);
 
-
+        jsonObject.put("success", success);
+        printWriter.println(jsonObject.toString());
+        printWriter.flush();
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
