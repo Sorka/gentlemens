@@ -136,7 +136,7 @@ public class HibernateManager {
 
         } catch(NoResultException e) {
 
-            System.err.println("User could not be logged in");
+            System.err.println("No users with matching parameters found.");
             e.printStackTrace();
             return null;
         }
