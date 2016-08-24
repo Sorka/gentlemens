@@ -15,7 +15,7 @@ import java.util.List;
 
 
 /**
- * This class contains all methods necessary for database interaction using hibernate
+ * This class provides all methods necessary for database interaction with hibernate
  *
  * Created by Dennis on 18.08.2016.
  */
@@ -25,7 +25,7 @@ public class HibernateManager {
      * SessionFactory instance that delivers session objects for all performed actions<br>
      * and contains database configurations
      */
-    private static SessionFactory sessionFactory;
+    private static final SessionFactory sessionFactory;
 
     // initialize session factory
     static {
@@ -53,7 +53,7 @@ public class HibernateManager {
      * @param username the name of the user
      * @param password the password of the user
      * @param email the valid email of the user
-     * @return a new instance of {@link  User} if there is no user with the same username<br>
+     * @return a new instance of {@link  User} if there is no user with the same username and email<br>
      *     null, else
      */
     public User addUser(String username, String password, String email) {
