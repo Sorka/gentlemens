@@ -50,8 +50,12 @@ public class User {
 
         HibernateManager hbm = new HibernateManager();
 
-        return hbm.login(username, password);
+        return hbm.getUser(username, password);
 
+    }
+
+    public void delete() {
+        new HibernateManager().removeUser(this);
     }
 
 
