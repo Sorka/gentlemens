@@ -1,13 +1,14 @@
 package hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by jonas on 18.08.2016.
  */
+
+@Entity
+@SequenceGenerator(name="ID", initialValue=0, allocationSize=1)
+@Table(name="gentusr")
 public class User {
 
     @Id
@@ -38,7 +39,7 @@ public class User {
         this.rank = Rank.PARTICIPANT;
     }
 
-    public static User registerUser(String username, String password, String email) {
+    public static User register(String username, String password, String email) {
 
         HibernateManager hbm = new HibernateManager();
 
@@ -56,10 +57,6 @@ public class User {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getUsername() {

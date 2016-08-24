@@ -13,23 +13,22 @@ import org.hibernate.criterion.Restrictions;
  */
 public class HibernateManager {
 
-    private SessionFactory sessionFactory;
+    private static SessionFactory sessionFactory;
 
-    public HibernateManager() {
-
+    static {
         try {
             sessionFactory = new Configuration()
-                    .setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect")
-                    .setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver")
-                    .setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/gentlemen")
-                    //.setProperty("hibernate.connection.username", "root")
-                    //.setProperty("hibernate.connection.password", "Passwort")
                     .addAnnotatedClass(User.class)
+                    .configure("hibernate/hibernate.cfg.xml")
                     .buildSessionFactory();
+
         } catch (Exception e) {
-            System.err.println("Failed to create sessionFactory object." + e);
+            System.err.println("Failed to create sessionFactory object.\n" + e);
             throw new ExceptionInInitializerError(e);
         }
+    }
+
+    public HibernateManager() {
 
     }
 
@@ -37,8 +36,10 @@ public class HibernateManager {
      * @param username Benutzername
      * @param password Passwort
      * @param email    Email
-     * @return ID des Benutzers oder Exception
+     * @return eine {@link User} Instanz für den angemeldeten Benutzer, wenn er existert und Benutzername und Passwort stimmen<br>
+     *     null, sonst
      */
+    //TODO prüfen, ob benutzer schon existiert
     public User addUser(String username, String password, String email) {
         Transaction transaction = null;
         User user = null;
@@ -51,7 +52,9 @@ public class HibernateManager {
 
             transaction.commit();
         } catch (HibernateException e) {
-            if (transaction != null) transaction.rollback();
+            if (transaction != null)
+                transaction.rollback();
+
             e.printStackTrace();
         }
         return user;
@@ -66,5 +69,24 @@ public class HibernateManager {
                 .add(Restrictions.eq("password", password)).uniqueResult();
 
         return user;
+    }
+    
+    public void updateUser(User user) {
+
+        Transaction transaction = null;
+
+        try (Session session = sessionFactory.openSession()) {
+            transaction = session.beginTransaction();
+            session.update(user);
+            transaction.commit();
+
+        } catch (HibernateException e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+        }
+    }
+
+    public void disconnect() {
+        sessionFactory.close();
     }
 }
