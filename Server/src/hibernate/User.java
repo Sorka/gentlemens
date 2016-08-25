@@ -1,6 +1,7 @@
 package hibernate;
 
 import javax.persistence.*;
+import java.util.HashMap;
 
 /**
  * Created by jonas on 18.08.2016.
@@ -10,6 +11,9 @@ import javax.persistence.*;
 @SequenceGenerator(name="ID", initialValue=0, allocationSize=1)
 @Table(name="gentusr")
 public class User {
+
+    @Transient
+    private static HashMap<Integer, User> userList = new HashMap<>();
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,6 +31,9 @@ public class User {
 
     @Column(name = "rang")
     private Rank rank;
+
+    @Transient
+    private String sessionId;
 
     public User() {
 
@@ -49,13 +56,30 @@ public class User {
     public static User login(String username, String password) {
 
         HibernateManager hbm = new HibernateManager();
+        User user = hbm.getUser(username, password);
 
-        return hbm.getUser(username, password);
+        if(user != null) {
+            User.userList.put(user.getId(), user);
+        }
 
+        return user;
+
+    }
+
+    public static void logout(int id) {
+
+        User user = User.userList.remove(id);
+        if(user != null) {
+            user.setSessionId(null);
+        }
     }
 
     public void delete() {
         new HibernateManager().removeUser(this);
+    }
+
+    public static final User getUser(int id) {
+        return User.userList.get(id);
     }
 
 
@@ -93,5 +117,13 @@ public class User {
 
     public void setRank(Rank rank) {
         this.rank = rank;
+    }
+
+    public String getSessionId() {
+        return sessionId;
+    }
+
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
     }
 }
