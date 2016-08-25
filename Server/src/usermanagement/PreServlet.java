@@ -19,11 +19,11 @@ public class PreServlet extends HttpServlet {
     PrintWriter printWriter;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        response.setContentType("application/json");
+        printWriter = response.getWriter();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("application/json");
-        printWriter = response.getWriter();
+
     }
 }
