@@ -4,6 +4,7 @@ import hibernate.User;
 
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
+import exceptions.*;
 
 /**
  * Created by jonas on 18.08.2016.
@@ -19,7 +20,19 @@ public class RegisterServlet extends PreServlet {
         String password = request.getParameter("passwordReg");
         String email = request.getParameter("email");
 
-        User user = User.register(username, password, email);
+        User user = null;
+        try {
+            user = User.register(username, password, email);
+        } catch (CIInvalidCharNameException e) {
+            e.printStackTrace();
+        } catch (CITooShortNameException e) {
+            e.printStackTrace();
+        } catch (CIInvalidCharPwException e) {
+            e.printStackTrace();
+        } catch (CITooShortPwException e) {
+            e.printStackTrace();
+        }
+
 
         boolean success = (user!=null);
 

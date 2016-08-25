@@ -5,11 +5,11 @@ import exceptions.*;
 /**
  * Created by Sergen on 02.05.2016 10:49
  */
-class CheckInput {
+public class CheckInput {
     private static String LaengePattern = "^.{3,}$";
 
 
-    static boolean checkName(String username) throws CITooShortNameException, CIInvalidCharNameException {
+    public static boolean checkName(String username) throws CITooShortNameException, CIInvalidCharNameException {
         //teste ob der Name dem Pattern entspricht
         String usernamepattern = "^[a-zA-Z0-9._-]{3,}$";
 
@@ -23,7 +23,7 @@ class CheckInput {
         //return username.matches(usernamepattern);
     }
 
-    static  boolean checkPassword(String password) throws CITooShortPwException, CIInvalidCharPwException {
+    public static boolean checkPassword(String password) throws CITooShortPwException, CIInvalidCharPwException {
         //teste ob das Passwort dem Pattern entspricht
         String passwordpattern = "^[a-zA-Z0-9@#$%^&+=._-]{3,}$";
 

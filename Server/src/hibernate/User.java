@@ -2,6 +2,9 @@ package hibernate;
 
 import javax.persistence.*;
 import java.util.HashMap;
+import exceptions.*;
+import usermanagement.CheckInput;
+
 
 /**
  * Created by jonas on 18.08.2016.
@@ -46,7 +49,10 @@ public class User {
         this.rank = Rank.PARTICIPANT;
     }
 
-    public static User register(String username, String password, String email) {
+    public static User register(String username, String password, String email) throws CIInvalidCharNameException, CITooShortNameException, CIInvalidCharPwException, CITooShortPwException {
+
+        CheckInput.checkName(username);
+        CheckInput.checkPassword(password);
 
         HibernateManager hbm = new HibernateManager();
 
