@@ -1,6 +1,9 @@
+package usermanagement;
+
+import hibernate.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -9,7 +12,7 @@ import java.io.IOException;
 /**
  * Created by jonas on 18.08.2016.
  */
-@WebServlet(name = "LoginServlet", urlPatterns="/login")
+@WebServlet(name = "usermanagement.LoginServlet", urlPatterns="/login")
 public class LoginServlet extends PreServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         super.doPost(request, response);
@@ -19,12 +22,12 @@ public class LoginServlet extends PreServlet {
 
         // login ausführen
         HttpSession session = request.getSession();
-        int id = User.login(username, password, session.getId());
-        boolean success = (id > -1);
+        User user = User.login(username, password);
+        boolean success = (user!=null);
 
         if(success){
             // userId zur session hinzufügen und session cookie setzen
-            request.getSession().setAttribute("userId", id);
+            request.getSession().setAttribute("userId", user.getId());
         }
 
         // antwort generieren und an client schicken

@@ -1,10 +1,14 @@
+package usermanagement;
+
+import hibernate.User;
+
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 /**
  * Created by jonas on 18.08.2016.
  */
-@WebServlet(name = "RegisterServlet", urlPatterns = "/register")
+@WebServlet(name = "usermanagement.RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends PreServlet {
 
 
@@ -15,7 +19,9 @@ public class RegisterServlet extends PreServlet {
         String password = request.getParameter("passwordReg");
         String email = request.getParameter("email");
 
-        Boolean success = User.register(username, password, email);
+        User user = User.register(username, password, email);
+
+        boolean success = (user!=null);
 
         jsonObject.put("success", success);
         printWriter.println(jsonObject.toString());

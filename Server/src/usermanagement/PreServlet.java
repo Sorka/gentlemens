@@ -1,3 +1,4 @@
+package usermanagement;
 
 import org.json.simple.JSONObject;
 
@@ -12,7 +13,7 @@ import java.io.PrintWriter;
 /**
  * Created by Jonas on 18.08.2016.
  */
-@WebServlet(name = "PreServlet")
+@WebServlet(name = "usermanagement.PreServlet")
 public class PreServlet extends HttpServlet {
     JSONObject jsonObject = new JSONObject();
     PrintWriter printWriter;
