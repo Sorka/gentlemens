@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 /**
  * Created by jonas on 18.08.2016.
  */
-@WebServlet(name = "usermanagement.LogoutServlet")
+@WebServlet(name = "usermanagement.LogoutServlet", urlPatterns = "/logout")
 public class LogoutServlet extends PreServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         super.doPost(request, response);
