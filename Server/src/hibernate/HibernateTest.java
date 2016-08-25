@@ -16,8 +16,9 @@ public class HibernateTest {
             System.out.println(user.getId());
         }
 
-        System.out.println();
-        System.out.println("logged in users: " + User.getUser(user.getId()).getUsername());
+        user = new HibernateManager().addUser("testUser", "Passwort123", "test@testmail.com");
+
+        System.out.print("user added, username = " + user.getUsername());
 
     }
 }

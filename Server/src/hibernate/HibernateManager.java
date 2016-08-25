@@ -132,7 +132,13 @@ public class HibernateManager {
 
             query.where(builder.and(builder.equal(root.get(param1), value1), builder.equal(root.get(param2), value2)));
 
-            return emf.createEntityManager().createQuery(query).getResultList();
+            List result =  emf.createEntityManager().createQuery(query).getResultList();
+
+            if(result.size() > 0) {
+                return result;
+            } else {
+                return null;
+            }
 
         } catch(NoResultException e) {
 
