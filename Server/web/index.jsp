@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Dennis
+  hibernate.User: Dennis
   Date: 18.08.2016
   Time: 15:09
   To change this template use File | Settings | File Templates.
