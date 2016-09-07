@@ -22,7 +22,7 @@ public class LoginServlet extends PreServlet {
 
         // login ausführen
         HttpSession session = request.getSession();
-        User user = User.login(username, password);
+        User user = User.login(username, password, session.getId());
         boolean success = (user!=null);
 
         if(success){

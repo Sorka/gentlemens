@@ -1,0 +1,198 @@
+/* stylesheet for wysihtml5 editor and toolbar */
+
+.wysiwyg-font-size-xx-large {
+    font-size: 75px
+}
+
+.wysiwyg-font-size-x-large {
+    font-size: 50px
+}
+
+.wysiwyg-font-size-large {
+    font-size: 35px
+}
+
+.wysiwyg-font-size-medium {
+    font-size: 22px
+}
+
+.wysiwyg-font-size-small {
+    font-size: 18px
+}
+
+.wysiwyg-font-size-x-small {
+    font-size: 14px
+}
+
+.wysiwyg-font-size-xx-small {
+    font-size: 10px
+}
+
+.wysiwyg-color-black {
+    color: #000
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.wysiwyg-color-silver {
+    color: silver
+}
+
+.bg-silver {
+    background-color: silver;
+}
+
+.wysiwyg-color-gray {
+    color: gray
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.wysiwyg-color-white {
+    color: #fff
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.wysiwyg-color-maroon {
+    color: maroon
+}
+
+.bg-maroon {
+    background-color: maroon;
+}
+
+.wysiwyg-color-red {
+    color: red
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.wysiwyg-color-purple {
+    color: purple
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+.wysiwyg-color-fuchsia {
+    color: #f0f
+}
+
+.bg-fuchsia {
+    background-color: #ff00ff;
+}
+
+.wysiwyg-color-green {
+    color: green
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.wysiwyg-color-lime {
+    color: #0f0
+}
+
+.bg-lime {
+    background-color: #00ff00;
+}
+
+.wysiwyg-color-olive {
+    color: olive
+}
+
+.bg-olive {
+    background-color: olive;
+}
+
+.wysiwyg-color-sand {
+    color: #fff9c5
+}
+
+.bg-sand {
+    background-color: #fff9c5;
+}
+
+.wysiwyg-color-yellow {
+    color: #ff0
+}
+
+.bg-yellow {
+    background-color: #ffff00;
+}
+
+.wysiwyg-color-navy {
+    color: navy
+}
+
+.bg-navy {
+    background-color: navy;
+}
+
+.wysiwyg-color-blue {
+    color: #00f
+}
+
+.bg-blue {
+    background-color: #0000ff;
+}
+
+.wysiwyg-color-skyblue {
+    color: #00a2ff
+}
+
+.bg-skyblue {
+    background-color: #00a2ff;
+}
+
+.wysiwyg-color-teal {
+    color: teal
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+[class^=wysiwyg-text-align] {
+    line-height: 1em
+}
+
+.wysiwyg-text-align-right {
+    text-align: right
+}
+
+.wysiwyg-text-align-center {
+    text-align: center
+}
+
+.wysiwyg-text-align-left {
+    text-align: left
+}
+
+div[data-wysihtml5-command='foreColor'] {
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding: 5px 5px 5px 5px !important;
+    border: 1px solid white;
+}
+
+div[data-wysihtml5-command='foreColor']:hover {
+    cursor: pointer;
+    border-color: black;
+}
+
+ul.color-chooser li {
+    margin-left: 3px;
+}

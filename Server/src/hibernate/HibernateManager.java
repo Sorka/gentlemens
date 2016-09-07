@@ -89,7 +89,7 @@ public class HibernateManager {
      */
     public User getUser(String username, String password) {
 
-        List<User> result = getUsersByParams("username", username, "password", password);
+        List<User> result = getUsersByParams("username", username, "password", password, true);
 
         if(result  != null && result.size() == 1) {
             return result.get(0);
@@ -99,14 +99,14 @@ public class HibernateManager {
     }
 
     /**
-     * checks if an user with the given name and email exists
+     * checks if an user with the given name <b>or</b> email exists
      * @param username the name of the user
      * @param email the email of the user
-     * @return true if an user with the given name and email exists<br>
+     * @return true if an user with the given name <b>or</b> email exists<br>
      *     false, else
      */
     private boolean userExists(String username, String email) {
-        return getUsersByParams("username", username, "email", email) != null;
+        return getUsersByParams("username", username, "email", email, false) != null;
     }
 
     /**
@@ -118,7 +118,7 @@ public class HibernateManager {
      *
      * @return a {@link List} of all users that match the given param/value pairs
      */
-    private List<User> getUsersByParams(String param1, String value1, String param2, String value2) {
+    private List<User> getUsersByParams(String param1, String value1, String param2, String value2, boolean doAnd) {
 
         if(param1 == null || value1 == null || param2 == null || value2 == null)
             return null;
@@ -130,15 +130,15 @@ public class HibernateManager {
             CriteriaQuery<User> query = builder.createQuery(User.class);
             Root<User> root = query.from(User.class);
 
-            query.where(builder.and(builder.equal(root.get(param1), value1), builder.equal(root.get(param2), value2)));
+            if(doAnd) {
+                query.where(builder.and(builder.equal(root.get(param1), value1), builder.equal(root.get(param2), value2)));
+            } else {
+                query.where(builder.or(builder.equal(root.get(param1), value1), builder.equal(root.get(param2), value2)));
+            }
 
             List result =  emf.createEntityManager().createQuery(query).getResultList();
 
-            if(result.size() > 0) {
-                return result;
-            } else {
-                return null;
-            }
+            return result.size() > 0 ? result : null;
 
         } catch(NoResultException e) {
 

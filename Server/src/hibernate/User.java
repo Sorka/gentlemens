@@ -47,6 +47,7 @@ public class User {
         this.password = password;
         this.email = email;
         this.rank = Rank.PARTICIPANT;
+        this.sessionId = "";
     }
 
     public static User register(String username, String password, String email) throws CIInvalidCharNameException, CITooShortNameException, CIInvalidCharPwException, CITooShortPwException {
@@ -59,12 +60,13 @@ public class User {
         return hbm.addUser(username, password, email);
     }
 
-    public static User login(String username, String password) {
+    public static User login(String username, String password, String sessionId) {
 
         HibernateManager hbm = new HibernateManager();
         User user = hbm.getUser(username, password);
 
         if(user != null) {
+            user.setSessionId(sessionId);
             User.userList.put(user.getId(), user);
         }
 
@@ -72,11 +74,20 @@ public class User {
 
     }
 
+    public static boolean isLoggedIn(int id, String sessionId) {
+
+        return userList.containsKey(id) && userList.get(id).getSessionId().equals(sessionId);
+    }
+
+    public static boolean isLoggedIn(Object id, String sessionId) {
+        return isLoggedIn((int) id, sessionId);
+    }
+
     public static void logout(int id) {
 
         User user = User.userList.remove(id);
         if(user != null) {
-            user.setSessionId(null);
+            user.setSessionId("");
         }
     }
 

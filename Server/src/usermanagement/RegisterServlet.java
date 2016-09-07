@@ -12,7 +12,6 @@ import exceptions.*;
 @WebServlet(name = "usermanagement.RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends PreServlet {
 
-
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         super.doPost(request, response);
 
