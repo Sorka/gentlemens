@@ -16,7 +16,7 @@ import usermanagement.CheckInput;
 public class User {
 
     @Transient
-    private static HashMap<Integer, User> userList = new HashMap<>();
+    public static HashMap<Integer, User> userList = new HashMap<>();
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
