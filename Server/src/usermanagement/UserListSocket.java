@@ -26,7 +26,7 @@ public class UserListSocket implements Observer{
 
 
     public UserListSocket(){
-       this.userList = User.userList;
+       this.userList = UserList.getInstance().getUserList();
 
     }
 
@@ -53,7 +53,10 @@ public class UserListSocket implements Observer{
 
     @Override
     public void update(Observable o, Object arg) {
-        sendToAll(getUserListAsJsonObject().toJSONString());
+
+        JSONObject initMsg = new JSONObject();
+        initMsg.put("userlist", getUserListAsJsonObject());
+        sendToAll(initMsg.toJSONString());
     }
 
     /**

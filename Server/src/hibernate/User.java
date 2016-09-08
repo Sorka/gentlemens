@@ -2,8 +2,11 @@ package hibernate;
 
 import javax.persistence.*;
 import java.util.HashMap;
+import java.util.Observable;
+
 import exceptions.*;
 import usermanagement.CheckInput;
+import usermanagement.UserList;
 
 
 /**
@@ -15,8 +18,6 @@ import usermanagement.CheckInput;
 @Table(name="gentusr")
 public class User {
 
-    @Transient
-    public static HashMap<Integer, User> userList = new HashMap<>();
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -67,7 +68,7 @@ public class User {
 
         if(user != null) {
             user.setSessionId(sessionId);
-            User.userList.put(user.getId(), user);
+            UserList.getInstance().add(user.getId(), user);
         }
 
         return user;
@@ -76,7 +77,7 @@ public class User {
 
     public static boolean isLoggedIn(int id, String sessionId) {
 
-        return userList.containsKey(id) && userList.get(id).getSessionId().equals(sessionId);
+        return UserList.getInstance().getUserList().containsKey(id) && UserList.getInstance().getUserList().get(id).getSessionId().equals(sessionId);
     }
 
     public static boolean isLoggedIn(Object id, String sessionId) {
@@ -85,7 +86,7 @@ public class User {
 
     public static void logout(int id) {
 
-        User user = User.userList.remove(id);
+        User user = UserList.getInstance().remove(id);
         if(user != null) {
             user.setSessionId("");
         }
@@ -96,7 +97,7 @@ public class User {
     }
 
     public static final User getUser(int id) {
-        return User.userList.get(id);
+        return UserList.getInstance().getUserList().get(id);
     }
 
     public static final User getUser(Object id) {

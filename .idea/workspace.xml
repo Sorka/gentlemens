@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list id="2db8fdf9-177d-4a48-a235-050f880a6322" name="Default" comment="added correct gitignore (beginning with &quot;.&quot; )" />
     <list default="true" id="ca939764-176e-4bb5-a1e0-a150de46dc18" name="idea_ignoreList" comment="Socket (leer)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/web/Client/js/userlistTest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/src/usermanagement/UserList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/hibernate/User.java" afterPath="$PROJECT_DIR$/Server/src/hibernate/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/src/usermanagement/UserListSocket.java" afterPath="$PROJECT_DIR$/Server/src/usermanagement/UserListSocket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/web/Client/out/recruit.html" afterPath="$PROJECT_DIR$/Server/web/Client/out/recruit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/web/Client/js/userlistTest.html" afterPath="$PROJECT_DIR$/Server/web/Client/js/userlistTest.html" />
     </list>
     <ignored path=".idea/misc.xml" />
     <ignored path=".idea/vcs.xml" />
@@ -63,25 +63,13 @@
       <file leaf-file-name="UserListSocket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/usermanagement/UserListSocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+            <state relative-caret-position="374">
+              <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1244#1245#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recruit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/web/Client/out/recruit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -89,21 +77,9 @@
       <file leaf-file-name="userlistTest.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/web/Client/js/userlistTest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="731">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/web/Client/js/bootstrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -111,49 +87,30 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/hibernate/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="901">
+              <caret line="88" column="54" selection-start-line="88" selection-start-column="54" selection-end-line="88" selection-end-column="54" />
+              <folding>
+                <element signature="e#2406#2407#0" expanded="true" />
+                <element signature="e#2473#2474#0" expanded="true" />
+                <element signature="e#2524#2525#0" expanded="true" />
+                <element signature="e#2564#2565#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editorTest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/web/Client/out/editorTest.html">
+      <file leaf-file-name="UserList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/usermanagement/UserList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/web/Client/out/jspTest/error.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="headdata.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/web/Client/out/jspTest/components/headdata.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/web/Client/out/jspTest/components/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="646">
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,6 +122,7 @@
       <list>
         <option value="Class" />
         <option value="HTML File" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
@@ -195,10 +153,12 @@
         <option value="$PROJECT_DIR$/source/todo" />
         <option value="$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java" />
         <option value="$PROJECT_DIR$/Server/src/usermanagement/UserListServlet.java" />
-        <option value="$PROJECT_DIR$/Server/src/hibernate/User.java" />
-        <option value="$PROJECT_DIR$/Server/src/usermanagement/UserListSocket.java" />
         <option value="$PROJECT_DIR$/Server/web/Client/out/recruit.html" />
+        <option value="$PROJECT_DIR$/Server/src/hibernate/User.java" />
+        <option value="$PROJECT_DIR$/Server/src/usermanagement/UserList.java" />
         <option value="$PROJECT_DIR$/Server/web/Client/js/userlistTest.html" />
+        <option value="$PROJECT_DIR$/Server/src/usermanagement/UserListSocket.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/06a7ada8-e8be-45c2-a31e-543a0859ff94/console.sql" />
       </list>
     </option>
   </component>
@@ -493,16 +453,14 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/hibernate/HibernateManager.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/hibernate/HibernateTest.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/hibernate/User.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/usermanagement/LoginServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/usermanagement/LogoutServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/usermanagement/PreServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/src/usermanagement/RegisterServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/register.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/WEB-INF/web.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/js/userlistTest.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/index.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/pve.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/pvp.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/recruit.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/register.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/ueber_uns.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -510,192 +468,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/css/editor.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/css/login.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/img/logo-transparent.svg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/img/logo.svg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/editorTest.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/components/headdata.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/components/navbar.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/components/navbar.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/error.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/index.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/pve.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/pvp.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/recruit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/register.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/ueber_uns.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/CHANGELOG.textile</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/Gruntfile.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/README.markdown</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/bower.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.min.map</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/dist/wysihtml.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/dist/wysihtml.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/dist/wysihtml.min.map</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/examples/advanced.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/examples/advanced_div.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/examples/css/stylesheet.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/examples/jquery.1.10.2.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/examples/simple.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/examples/wotoolbar.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/lib/base/base.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/parser_rules/advanced.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/parser_rules/advanced_and_extended.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/parser_rules/advanced_unwrap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/parser_rules/simple.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/assert/html_equal.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/browser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/addTableCells.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/alignCenterStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/alignJustifyStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/alignLeftStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/alignRightStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/bgColorStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/bold.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/createLink.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/createTable.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/deleteTableCells.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/fontSize.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/fontSizeStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/foreColor.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/foreColorStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/formatBlock.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/formatCode.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/formatInline.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/indentList.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/insertBlockQuote.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/insertHTML.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/insertImage.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/insertLineBreak.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/insertList.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/insertOrderedList.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/insertUnorderedList.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/italic.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/justifyCenter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/justifyFull.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/justifyLeft.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/justifyRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/mergeTableCells.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/outdentList.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/redo.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/removeLink.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/subscript.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/superscript.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/underline.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/commands/undo.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/auto_link.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/class.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/compare_document_position.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/contains.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/contenteditable_area.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/convert_to_list.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/copy_attributes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/copy_styles.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/delegate.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/dom_node.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/get_as_dom.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/get_attribute.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/get_attributes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/get_parent_element.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/get_pasted_html.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/get_style.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/get_textnodes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/has_element_with_class_name.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/has_element_with_tag_name.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/insert.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/insert_css.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/is_loaded_image.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/line_breaks.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/observe.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/parse.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/query.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/remove_empty_text_nodes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/remove_invisible_spaces.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/rename_element.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/replace_with_child_nodes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/resolve_list.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/sandbox.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/set_attributes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/set_styles.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/simulate_placeholder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/table.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/text_content.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/dom/unwrap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/editor.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/lang/array.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/lang/dispatcher.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/lang/object.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/lang/string.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/polyfills.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/quirks/clean_pasted_html.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/quirks/ensure_proper_clearing.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/quirks/get_correct_inner_html.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/quirks/redraw.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/quirks/style_parser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/quirks/table_cells_selection.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/selection/html_applier.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/selection/selection.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/toolbar/dialog.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/toolbar/dialog_bgColorStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/toolbar/dialog_createTable.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/toolbar/dialog_fontSizeStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/toolbar/dialog_foreColorStyle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/toolbar/speech.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/toolbar/toolbar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/undo_manager.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/views/composer.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/views/composer.observe.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/views/composer.style.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/views/sourceview.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/views/synchronizer.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/views/textarea.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/views/view.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/src/wysihtml5.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/browser_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/commands/formatBlock_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/commands/formatInline_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/auto_link_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/compare_document_position_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/contains_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/convert_to_list_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/copy_attributes_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/copy_styles_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/delegate_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/dom_node_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/get_as_dom_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/get_parent_element_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/get_style_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/has_element_with_class_name_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/has_element_with_tag_name_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/insert_css_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/observe_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/parse_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/rename_element_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/resolve_list_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/sandbox_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/set_attributes_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/set_styles_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/table_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/dom/unwrap_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/editor_commands_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/editor_contenteditablemode_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/editor_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/incompatible_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/lang/array_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/lang/object_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/lang/string_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/polyfills_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/quirks/clean_pasted_html_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/undo_manager_test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/wysihtml-0.5.5/test/views/composer_test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/components/editor-toolbar.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/Client/out/jspTest/components/headdata.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -703,7 +477,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/web/index.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -1305,7 +1078,7 @@
       <workItem from="1471538495234" duration="1953000" />
       <workItem from="1472116633140" duration="12785000" />
       <workItem from="1472130734288" duration="2602000" />
-      <workItem from="1473333918543" duration="4079000" />
+      <workItem from="1473333918543" duration="6478000" />
     </task>
     <task id="LOCAL-00001" summary="added correct gitignore (beginning with &quot;.&quot; )">
       <created>1471529228282</created>
@@ -1384,11 +1157,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472132905559</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Socket (leer)">
+      <created>1473338010342</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1473338010342</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31041000" />
+    <option name="totallyTimeSpent" value="33440000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1401,10 +1181,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1413,25 +1194,24 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33694476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32135308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21822916" sideWeight="0.48976377" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22334754" sideWeight="0.48976377" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21822916" sideWeight="0.5102362" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1517,14 +1297,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Server/src/hibernate/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/todo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1641,6 +1413,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1380">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1745,29 +1518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/06a7ada8-e8be-45c2-a31e-543a0859ff94/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/editorTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/jspTest/components/headdata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/usermanagement/RegisterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
@@ -1784,48 +1534,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/jspTest/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/usermanagement/CheckInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/hibernate/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/usermanagement/UserListSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1377#1378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/recruit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1840,10 +1552,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/jspTest/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/jspTest/components/headdata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/editorTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/web/Client/out/recruit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/usermanagement/UserList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/hibernate/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="88" column="54" selection-start-line="88" selection-start-column="54" selection-end-line="88" selection-end-column="54" />
+          <folding>
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2473#2474#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
+            <element signature="e#2564#2565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/usermanagement/UserListSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/06a7ada8-e8be-45c2-a31e-543a0859ff94/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/web/Client/js/userlistTest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="731">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
           <folding />
         </state>
       </provider>
