@@ -11,8 +11,8 @@
 <html lang="en">
 <head>
     <title>thenewboston</title>
-    
-    <%@include file="components/headdata.html"%>
+
+    <jsp:include page="components/headdata.jsp"/>
     
     <style>
         .jumbotron{

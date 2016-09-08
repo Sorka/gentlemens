@@ -5,8 +5,47 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
+    <div id="messages"></div>
+    <div>
+        <h2>Logged in Users</h2>
+    </div>
+    <div id="userlist">
+    </div>
+<script>
+    var webSocket = new WebSocket('ws://localhost:46061/lobby/global');
 
-    </script>
+    var userlist = document.getElementById("userlist");
+
+    webSocket.onerror = function (event) {
+        onError(event)
+    };
+
+    webSocket.onopen = function (event) {
+        onOpen(event)
+    };
+
+    webSocket.onmessage = function (event) {
+        onMessage(event)
+    };
+
+    function onMessage(event) {
+        userlist.innerHTML += 'received data: ' + event.data;
+        var json = JSON.parse(event.data);
+
+        for (var i = 0; i < json.userList.length; i++) {
+            userlist.innerHTML += '<br>' + json.userList[i].username;
+        }
+
+    }
+
+    function onOpen(event) {
+        document.getElementById('messages').innerHTML
+                = 'Connection established';
+    }
+
+    function onError(event) {
+        alert(event.data);
+    }
+</script>
 </body>
 </html>

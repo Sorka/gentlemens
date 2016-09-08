@@ -99,6 +99,10 @@ public class User {
         return User.userList.get(id);
     }
 
+    public static final User getUser(Object id) {
+        return getUser((int) id);
+    }
+
 
     public int getId() {
         return id;

@@ -6,13 +6,21 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    Object idAttr = session.getAttribute("userId");
 
+    boolean loggedIn = idAttr != null && User.isLoggedIn(idAttr, session.getId());
+    boolean isAdmin = loggedIn && User.getUser(idAttr).getRank().equals(Rank.ADMINISTRATOR);
+
+    int editorNr = 0;
+
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Gentlemens Club - Rekrutierung</title>
-    
-    <%@include file="components/headdata.html"%>
+
+    <jsp:include page="components/headdata.jsp"/>
 
     <style>
         .jumbotron{
@@ -44,6 +52,11 @@
         <h1>Gentlemens Club</h1>
     </div>
     <div class="jumbotron">
+        <% if(loggedIn && isAdmin) { %>
+            <div class="container">
+                <div class="row">
+                    <div id="<% out.print() %>" class="edy-tb col-lg-12 btn-toolbar" role="toolbar" style="display: none;">
+        <% } %>
         <p>Wir rekrutieren derzeit nur noch für PvP Spieler. Willst du auch ein Gentlemen sein, so kontaktier uns im Spiel. Melden könnt ihr euch bei</p>
         <p>Gildenleiter: Zepár-Arthas</p>
         <p>Offiziere: neri#2495, Dashâ#2515</p>
