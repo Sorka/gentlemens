@@ -1,5 +1,8 @@
+<%@ page import="cms.ContentLoader" %>
+<%@ page import="hibernate.Rank" %>
 <%@ page import="hibernate.User" %>
-<%@ page import="hibernate.Rank" %><%--
+<%@ page import="org.json.simple.JSONArray" %>
+<%--
   Created by IntelliJ IDEA.
   User: Dennis
   Date: 02.09.2016
@@ -13,7 +16,9 @@
     boolean loggedIn = idAttr != null && User.isLoggedIn(idAttr, session.getId());
     boolean isAdmin = loggedIn && User.getUser(idAttr).getRank().equals(Rank.ADMINISTRATOR);
 
-    int editorNr = 0;
+    JSONArray content = (JSONArray) new ContentLoader("index").load().get("content");
+
+    int size  = content.size();
 
 %>
 <!DOCTYPE html>
@@ -48,32 +53,16 @@
     <div class="page-header">
         <h1>Gentlemens Club</h1>
     </div>
-    <div class="jumbotron">
-        <div class="row">
-            <div class="col-md-4"><h3>Platzhalter</h3>
-                <p1>Text</p1>
-            </div>
-            <div class="col-md-4"><h3>Platzhalter</h3>
-                <p1>Text</p1>
-            </div>
-            <div class="col-md-4"><h3>Platzhalter</h3>
-                <p1>Text</p1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><h3>Platzhalter</h3>
-                <p1>Text</p1>
-            </div>
-            <div class="col-md-4"><h3>Platzhalter</h3>
-                <p1>Text</p1>
-            </div>
-            <div class="col-md-4"><h3>Platzhalter</h3>
-                <p1>Text</p1>
-            </div>
-        </div>
-    </div>
+
+    <jsp:include page="components/contentLoader.jsp">
+        <jsp:param name="pageName" value="index"/>
+    </jsp:include>
 
 </div>
+
+    <jsp:include page="components/editorJsLoader.jsp">
+        <jsp:param name="pageName" value="index"/>
+    </jsp:include>
 
 </body>
 </html>

@@ -21,11 +21,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <% if(loggedIn && isAdmin)  { %>
-    <link rel="stylesheet" type="text/css" href="../css/editor.css">
+    <link rel="stylesheet" type="text/css" href="../../css/editor.css">
 
     <!-- wysihtml core javascript with default toolbar functions -->
-    <script src="../wysihtml-0.5.5/dist/wysihtml-toolbar.min.js"></script>
+    <script src="../../wysihtml-0.5.5/dist/wysihtml-toolbar.min.js"></script>
 
     <!-- rules defining tags, attributes and classes that are allowed -->
-    <script src="../wysihtml-0.5.5/parser_rules/advanced_and_extended.js"></script>
+    <script src="../../wysihtml-0.5.5/parser_rules/advanced_and_extended.js"></script>
 <% } %>
