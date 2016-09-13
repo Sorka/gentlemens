@@ -18,16 +18,18 @@ import java.util.*;
  * Created by jonas on 25.08.2016.
  */
 @ServerEndpoint( value="/userlist")
-public class UserListSocket implements Observer{
+public class UserListSocket implements Observer {
 
     private static Set<Session> clients = Collections.synchronizedSet(new HashSet<Session>());
 
     private HashMap<Integer, User> userList;
 
 
-    public UserListSocket(){
-       this.userList = UserList.getInstance().getUserList();
+    public UserListSocket() {
 
+       UserList listObj = UserList.getInstance();
+       this.userList = listObj.getUserList();
+       listObj.addObserver(this);
     }
 
     @OnOpen
@@ -92,10 +94,10 @@ public class UserListSocket implements Observer{
 
         JSONArray userNames = new JSONArray();
 
-        for(int id : userList.keySet()) {
+        for(User user : userList.values()) {
 
             JSONObject obj = new JSONObject();
-            obj.put("username", userList.get(id).getUsername());
+            obj.put("username", user.getUsername());
             userNames.add(obj);
         }
         return userNames;

@@ -12,7 +12,7 @@
 <head>
     <title>thenewboston</title>
 
-    <jsp:include page="components/headdata.jsp"/>
+    <%@include file="components/headdata.html"%>
     
     <style>
         .jumbotron{
@@ -43,6 +43,8 @@
         <p>Bla Bla Bla</p>
     </div>
 </div>
+
+<jsp:include page="components/footdata.jsp"/>
 
 </body>
 </html>

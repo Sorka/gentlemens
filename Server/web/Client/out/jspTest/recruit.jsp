@@ -21,7 +21,7 @@
 <head>
     <title>Gentlemens Club - Rekrutierung</title>
 
-    <jsp:include page="components/headdata.jsp"/>
+    <%@include file="components/headdata.html"%>
 
     <style>
         .jumbotron{
@@ -58,6 +58,8 @@
     </jsp:include>
 
 </div>
+
+    <jsp:include page="components/footdata.jsp"/>
 
     <jsp:include page="components/editorJsLoader.jsp">
         <jsp:param name="pageName" value="recruit"/>

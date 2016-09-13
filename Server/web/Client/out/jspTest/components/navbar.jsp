@@ -11,6 +11,12 @@
 
     boolean loggedIn = idAttr != null && User.isLoggedIn(idAttr, session.getId());
 
+    User user = null;
+
+    if(idAttr != null) {
+        user = User.getUser(idAttr);
+    }
+
 %>
 
 <nav class="navbar navbar-default">
@@ -47,25 +53,31 @@
                     <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
                     <li><a href="register.jsp">Registrieren</a></li>
                 <%  } else { %>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="#" style="cursor: default;">Hallo <%= user.getUsername() %></a></li>
+                    <li><a id="logout-btn" href="#">Logout</a></li>
                 <% } %>
             </ul>
         </div><!-- /.navbar-collapse -->
+        <% if(!loggedIn) { %>
         <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
                 <div class="loginmodal-container">
+                    <div class="animation-overlay">
+                        <img class="img-responsive animation-img" src="../../img/loading-animation.svg"/>
+                    </div>
                     <h1>Login to Your Account</h1><br>
-                    <form method="post" action="/login">
+                    <form id="form" method="post" action="/login">
                         <input type="text" name="username" placeholder="Username">
                         <input type="password" name="password" placeholder="Password">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
-
+                    <p id="errorText" style="color:red;"></p>
                     <div class="login-help">
                         <a href="register.jsp">Register</a> - <a href="#">Forgot Password</a>
                     </div>
                 </div>
             </div>
         </div>
+        <% } %>
     </div><!-- /.container-fluid -->
 </nav>

@@ -8,10 +8,11 @@
     <link rel="stylesheet" type="text/css" href="../css/login.css">
 
     <style>
-        .jumbotron{
+        .jumbotron {
             background-color: #57575f;
             color: #ffffff;
         }
+
         /* Adds borders for tabs */
         .tab-content {
             border-left: 1px solid #ddd;
@@ -19,6 +20,7 @@
             border-bottom: 1px solid #ddd;
             padding: 10px;
         }
+
         .nav-tabs {
             margin-bottom: 0;
         }
@@ -30,14 +32,16 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-                <img class="pull-left" src="../img/logo-transparent.svg" width="50" style="margin-top: -5px; margin-right: 5px;"/>
+                <img class="pull-left" src="../img/logo-transparent.svg" width="50"
+                     style="margin-top: -5px; margin-right: 5px;"/>
                 Gentlemens Club
             </a>
         </div>
@@ -48,7 +52,8 @@
                 <li><a href="ueber_uns.html">Über uns</a></li>
                 <li><a href="recruit.html">Rekrutierung</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Spielrichtungen <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Spielrichtungen <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="pvp.html">PvP</a></li>
                         <li><a href="pve.html">PvE</a></li>
@@ -60,16 +65,20 @@
                 <li><a href="register.html">Registrieren</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
                 <div class="loginmodal-container">
+                    <div class="animation-overlay">
+                        <img class="img-responsive animation-img" src="../img/loading-animation.svg"/>
+                    </div>
                     <h1>Login to Your Account</h1><br>
-                    <form method="post" action="/login">
+                    <form id="form" method="post" action="/login">
                         <input type="text" name="username" placeholder="Username">
                         <input type="password" name="password" placeholder="Password">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
-
+                    <p id="errorText" style="color:red;"></p>
                     <div class="login-help">
                         <a href="#">Register</a> - <a href="#">Forgot Password</a>
                     </div>
@@ -111,7 +120,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+<script src="../js/login.js"></script>
 
 </body>
 </html>

@@ -12,7 +12,7 @@
 <head>
     <title>Über uns </title>
 
-    <jsp:include page="components/headdata.jsp"/>
+    <%@include file="components/headdata.html"%>
 
     <style>
         .jumbotron{
@@ -52,6 +52,8 @@
         <p>Auch wenn das heißt sich die Finger schmutzig zu machen</p>
     </div>
 </div>
+
+<jsp:include page="components/footdata.jsp"/>
 
 </body>
 </html>

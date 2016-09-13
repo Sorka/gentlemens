@@ -17,7 +17,7 @@
 <head>
     <title>thenewboston</title>
 
-    <jsp:include page="components/headdata.jsp"/>
+    <%@include file="components/headdata.html"%>
 
     <style>
         .jumbotron{
@@ -97,5 +97,7 @@
     <h1>Du bist bereits eingeloggt, es ist keine Registrierung mehr nötig ;)</h1>
     <% } %>
 </div>
+
+<jsp:include page="components/footdata.jsp"/>
 
 </body>
