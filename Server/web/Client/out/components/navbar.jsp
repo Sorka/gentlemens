@@ -29,8 +29,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.jsp">
-                <img class="pull-left" src="../../img/logo-transparent.svg" width="50" style="margin-top: -5px; margin-right: 5px;"/>
+            <a class="navbar-brand" href="/index">
+                <img class="pull-left" src="/Client/img/logo-transparent.svg" width="50" style="margin-top: -5px; margin-right: 5px;"/>
                 Gentlemens Club
             </a>
         </div>
@@ -38,20 +38,20 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="ueber_uns.jsp">&Uuml;ber uns</a></li>
-                <li><a href="recruit.jsp">Rekrutierung</a></li>
+                <li><a href="/aboutus">&Uuml;ber uns</a></li>
+                <li><a href="/recruit">Rekrutierung</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Spielrichtungen <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="pvp.jsp">PvP</a></li>
-                        <li><a href="pve.jsp">PvE</a></li>
+                        <li><a href="/pvp">PvP</a></li>
+                        <li><a href="/pve">PvE</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <% if(!loggedIn) { %>
                     <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                    <li><a href="register.jsp">Registrieren</a></li>
+                    <li><a href="/registration">Registrieren</a></li>
                 <%  } else { %>
                     <li><a href="#" style="cursor: default;">Hallo <%= user.getUsername() %></a></li>
                     <li><a id="logout-btn" href="#">Logout</a></li>
@@ -63,7 +63,7 @@
             <div class="modal-dialog">
                 <div class="loginmodal-container">
                     <div class="animation-overlay">
-                        <img class="img-responsive animation-img" src="../../img/loading-animation.svg"/>
+                        <img class="img-responsive animation-img" src="/Client/img/loading-animation.svg"/>
                     </div>
                     <h1>Login to Your Account</h1><br>
                     <form id="form" method="post" action="/login">
@@ -73,7 +73,7 @@
                     </form>
                     <p id="errorText" style="color:red;"></p>
                     <div class="login-help">
-                        <a href="register.jsp">Register</a> - <a href="#">Forgot Password</a>
+                        <a href="/registration">Register</a> - <a href="#">Forgot Password</a>
                     </div>
                 </div>
             </div>

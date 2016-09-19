@@ -47,22 +47,22 @@
 </head>
 <body>
 
-<jsp:include page="components/navbar.jsp" />
+<jsp:include page="/Client/out/components/navbar.jsp" />
 
 <div class="container">
     <div class="page-header">
         <h1>Gentlemens Club</h1>
     </div>
 
-    <jsp:include page="components/contentLoader.jsp">
+    <jsp:include page="/Client/out/components/contentLoader.jsp">
         <jsp:param name="pageName" value="index"/>
     </jsp:include>
 
 </div>
 
-    <jsp:include page="components/footdata.jsp"/>
+    <jsp:include page="/Client/out/components/footdata.jsp"/>
 
-    <jsp:include page="components/editorJsLoader.jsp">
+    <jsp:include page="/Client/out/components/editorJsLoader.jsp">
         <jsp:param name="pageName" value="index"/>
     </jsp:include>
 

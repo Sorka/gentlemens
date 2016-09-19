@@ -19,18 +19,18 @@
 
 <% if(loggedIn)  { %>
 
-    <script src="../../js/logout.js"></script>
+    <script src="/Client/js/logout.js"></script>
 
     <% if(isAdmin)  { %>
     <link rel="stylesheet" type="text/css" href="../../css/editor.css">
 
     <!-- wysihtml core javascript with default toolbar functions -->
-    <script src="../../wysihtml-0.5.5/dist/wysihtml-toolbar.min.js"></script>
+    <script src="/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.min.js"></script>
 
     <!-- rules defining tags, attributes and classes that are allowed -->
-    <script src="../../wysihtml-0.5.5/parser_rules/advanced_and_extended.js"></script>
-    <script src="../../js/updater.js"></script>
+    <script src="/Client/wysihtml-0.5.5/parser_rules/advanced_and_extended.js"></script>
+    <script src="/Client/js/updater.js"></script>
     <% } %>
 <% } else { %>
-    <script src="../../js/login.js"></script>
+    <script src="/Client/js/login.js"></script>
 <% } %>
