@@ -1,0 +1,6 @@
+{
+  "content" : [
+    {"section" : "<h1>Test</h1> <p>Dies ist ein Testeintrag</p>"},
+    {"section" : "<h1>Test</h1> <p>Dies ist noch ein Testeintrag</p>"}
+  ]
+}

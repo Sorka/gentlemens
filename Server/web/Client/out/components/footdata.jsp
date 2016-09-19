@@ -29,6 +29,7 @@
 
     <!-- rules defining tags, attributes and classes that are allowed -->
     <script src="../../wysihtml-0.5.5/parser_rules/advanced_and_extended.js"></script>
+    <script src="../../js/updater.js"></script>
     <% } %>
 <% } else { %>
     <script src="../../js/login.js"></script>
