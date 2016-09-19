@@ -26,6 +26,11 @@
 
 <% if(loggedIn && isAdmin) {%>
 <script>
+
+    var numberOfEditors = <%= size + ";" %>
+
+    var editors = [];
+
     <% for (int i = 0; i < size; i++) { %>
 
 
@@ -34,7 +39,36 @@
         parserRules: wysihtml5ParserRules
     });
 
+    editors.push(editor);
 
     <% } %>
+
+    /**
+     * puts content of all editable divs into a single json object and returns
+     * this object as a string
+     */
+    function getContentAsJsonString() {
+
+        var sections = [];
+
+        for(var i = 0; i < numberOfEditors; i++) {
+
+            var item = {};
+
+            item["section"] = editors[i].getValue(true);
+
+            sections.push(item);
+        }
+
+        editors[0].setValue(sections[0]["section"], true);
+
+        document.getElementById('editor0').innerHTML += sections[0]["section"];
+
+        var jsonObj = {};
+        jsonObj["content"] = sections;
+
+        return JSON.stringify(jsonObj);
+    }
+
 </script>
 <% } %>
