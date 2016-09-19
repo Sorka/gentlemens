@@ -25,7 +25,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
-                <img class="img img-responsive" src="../../img/logo.svg" width="500" height="500">
+                <img class="img img-responsive" src="../img/logo.svg" width="500" height="500">
                 <p>
                     Die angeforderte Seite konnte leider nicht gefunden. <br>
                 </p>
