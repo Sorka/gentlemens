@@ -4,6 +4,7 @@
 $('#update-btn').click(function(event){
     event.preventDefault();
     $.post('/update',
+        'pageName=' + pageName + '&content=' + getContentAsJsonString(),
         function(jsonData){
             console.log(jsonData);
 
