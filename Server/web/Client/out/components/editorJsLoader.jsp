@@ -17,8 +17,10 @@
 
     int size = 0;
 
+    String pageName = request.getParameter("pageName");
+
     if(loggedIn) {
-        JSONArray content = (JSONArray) new ContentLoader(request.getParameter("pageName")).load().get("content");
+        JSONArray content = (JSONArray) new ContentLoader(pageName).load().get("content");
 
         size = content.size();
     }
@@ -26,6 +28,8 @@
 
 <% if(loggedIn && isAdmin) {%>
 <script>
+
+    var pageName = <%= pageName + ';'%>
 
     var numberOfEditors = <%= size + ";" %>
 
