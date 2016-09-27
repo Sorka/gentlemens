@@ -1,4 +1,4 @@
-package cms.content;
+package cms;
 
 import javax.swing.text.AbstractDocument;
 import java.io.File;
@@ -30,11 +30,11 @@ public class ContentSaver {
     }
 
     public void save(){
-        FileWriter fw = null;
-        try {
-            fw = new FileWriter(CONTENT_DIRECTORY_PATH + "/" + jsonname);
+
+        try(FileWriter fw = new FileWriter(CONTENT_DIRECTORY_PATH + "/" + jsonname + ".json")) {
+            
             fw.write(content);
-            fw.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }

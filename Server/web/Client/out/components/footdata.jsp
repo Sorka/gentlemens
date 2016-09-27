@@ -22,7 +22,6 @@
     <script src="/Client/js/logout.js"></script>
 
     <% if(isAdmin)  { %>
-    <link rel="stylesheet" type="text/css" href="../../css/editor.css">
 
     <!-- wysihtml core javascript with default toolbar functions -->
     <script src="/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.min.js"></script>

@@ -29,10 +29,10 @@
     <%@include file="components/headdata.html"%>
 
     <style>
-        .jumbotron{
+        /*.jumbotron{
             background-color: #57575f;
             color: #ffffff;
-        }
+        }*/
         /* Adds borders for tabs */
         .tab-content {
             border-left: 1px solid #ddd;

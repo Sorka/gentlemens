@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     
-    <!--<welcome-file-list>
-        <welcome-file>Client/out/index.html</welcome-file>
-    </welcome-file-list>-->
+    <welcome-file-list>
+        <welcome-file>/Client/out/index.jsp</welcome-file>
+    </welcome-file-list>
 
-    <!--<error-page>
+    <error-page>
         <error-code>404</error-code>
         <location>/Client/out/error.jsp</location>
-    </error-page>-->
+    </error-page>
 
     <filter>
         <filter-name>default</filter-name>
@@ -24,16 +24,6 @@
         <url-pattern>/img/*</url-pattern>
         <url-pattern>/fonts/*</url-pattern>
     </filter-mapping>
-
-    <servlet>
-        <servlet-name>index</servlet-name>
-        <jsp-file>/Client/out/index.jsp</jsp-file>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>index</servlet-name>
-        <url-pattern>/index</url-pattern>
-    </servlet-mapping>
 
     <servlet>
         <servlet-name>pve</servlet-name>

@@ -15,8 +15,9 @@ import java.io.PrintWriter;
  */
 @WebServlet(name = "usermanagement.PreServlet")
 public class PreServlet extends HttpServlet {
-    JSONObject jsonObject = new JSONObject();
-    PrintWriter printWriter;
+
+    public JSONObject jsonObject = new JSONObject();
+    public PrintWriter printWriter;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");

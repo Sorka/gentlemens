@@ -12,7 +12,7 @@
 <head>
     <title>Über uns </title>
 
-    <%@include file="components/headdata.html"%>
+    <%@include file="/Client/out/components/headdata.html"%>
 
     <style>
         .jumbotron{
@@ -33,7 +33,7 @@
 </head>
 <body>
 
-<jsp:include page="components/navbar.jsp" />
+<jsp:include page="/Client/out/components/navbar.jsp" />
 
 <div class="container">
     <div class="page-header">
@@ -53,7 +53,7 @@
     </div>
 </div>
 
-<jsp:include page="components/footdata.jsp"/>
+<jsp:include page="/Client/out/components/footdata.jsp"/>
 
 </body>
 </html>

@@ -27,9 +27,17 @@
 %>
 
 <% if(loggedIn && isAdmin) {%>
+<script type="text/javascript" src="/Client/js/editorUtils.js"></script>
+<script type="text/javascript">
+
+    var pageName = <%= "'" + pageName + "';"%>
+
+    <%= "initEditors(" +  size + ");" %>
+</script>
+<%--
 <script>
 
-    var pageName = <%= pageName + ';'%>
+    var pageName = <%= "'" + pageName + "';"%>
 
     var numberOfEditors = <%= size + ";" %>
 
@@ -64,10 +72,6 @@
             sections.push(item);
         }
 
-        editors[0].setValue(sections[0]["section"], true);
-
-        document.getElementById('editor0').innerHTML += sections[0]["section"];
-
         var jsonObj = {};
         jsonObj["content"] = sections;
 
@@ -75,4 +79,5 @@
     }
 
 </script>
+--%>
 <% } %>

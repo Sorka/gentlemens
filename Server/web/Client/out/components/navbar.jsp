@@ -29,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/index">
+            <a class="navbar-brand" href="/">
                 <img class="pull-left" src="/Client/img/logo-transparent.svg" width="50" style="margin-top: -5px; margin-right: 5px;"/>
                 Gentlemens Club
             </a>
