@@ -14,22 +14,24 @@
     boolean isAdmin = loggedIn && User.getUser(idAttr).getRank().equals(Rank.ADMINISTRATOR);
 
 %>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--%>
+<script src="/Client/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<%--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>--%>
+<script src="/Client/js/bootstrap.min.js" type="text/javascript"></script>
 
 <% if(loggedIn)  { %>
 
-    <script src="/Client/js/logout.js"></script>
+    <script src="/Client/js/logout.js" type="text/javascript"></script>
 
     <% if(isAdmin)  { %>
 
     <!-- wysihtml core javascript with default toolbar functions -->
-    <script src="/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.min.js"></script>
+    <script src="/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.min.js" type="text/javascript"></script>
 
     <!-- rules defining tags, attributes and classes that are allowed -->
-    <script src="/Client/wysihtml-0.5.5/parser_rules/advanced_and_extended.js"></script>
-    <script src="/Client/js/updater.js"></script>
+    <script src="/Client/wysihtml-0.5.5/parser_rules/advanced_and_extended.js" type="text/javascript"></script>
+    <script src="/Client/js/updater.js" type="text/javascript"></script>
     <% } %>
 <% } else { %>
-    <script src="/Client/js/login.js"></script>
+    <script src="/Client/js/login.js" type="text/javascript"></script>
 <% } %>

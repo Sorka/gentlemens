@@ -22,13 +22,12 @@
 %>
 
 <% for(int i = 0; i < size; i++) { String data = (String) ((JSONObject) content.get(i)).get("section"); %>
-<div class="jumbotron">
+<div id="<%= "section" + i%>" class="jumbotron">
 
     <div class="container">
         <div class="row">
             <% if(loggedIn && isAdmin) { %>
-            <div id="<%= "editor" + i%>" class="col-lg-12" data-placeholder="Go on, start editing..."
-                 style="-ms-word-wrap: break-word;word-wrap: break-word;">
+            <div id="<%= "editor" + i%>" class="col-lg-12 line-break" data-placeholder="Go on, start editing...">
                 <%= data %>
             </div>
             <% } else { %>
@@ -41,7 +40,6 @@
         <div class="row">
             <div id="<%= "toolbar" + i %>" class="edy-tb col-lg-12 btn-toolbar" role="toolbar" style="display: none;">
                 <%@include file="editor-toolbar.html"%>
-
             </div>
         </div>
         <% } %>

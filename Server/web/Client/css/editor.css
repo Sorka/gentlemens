@@ -209,3 +209,8 @@ ul.color-chooser li {
     transform: translate(-50%, -50%);
     z-index: 10;
 }
+
+.line-break {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}

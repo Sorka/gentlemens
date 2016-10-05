@@ -3,16 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    
+
+    <!-- start page, displayed on url "/",
+         so it acts also as general url mapping for index.jsp
+    -->
     <welcome-file-list>
         <welcome-file>/Client/out/index.jsp</welcome-file>
     </welcome-file-list>
 
+    <!-- mapping for error pages -->
     <error-page>
         <error-code>404</error-code>
         <location>/Client/out/error.jsp</location>
     </error-page>
 
+    <!-- filter (StaticContentFilter) and filter url mapping
+         to permit access to static files such as css, js, etc
+         with direct url (and not with url mapping)
+    -->
     <filter>
         <filter-name>default</filter-name>
         <filter-class>StaticContentFilter</filter-class>
@@ -25,6 +33,7 @@
         <url-pattern>/fonts/*</url-pattern>
     </filter-mapping>
 
+    <!-- url mappings for content pages jsp files, except for index.jsp (see at the top of this document) -->
     <servlet>
         <servlet-name>pve</servlet-name>
         <jsp-file>/Client/out/pve.jsp</jsp-file>

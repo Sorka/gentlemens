@@ -32,8 +32,14 @@ function initEditors(editorNr) {
             var toolbarId = 'toolbar' + i;
 
             addEditor(editorId, toolbarId);
+
+            $('#section' + i).find('.remove-btn').click(createOnclickFunction(i));
         }
     }
+}
+
+function createOnclickFunction(index) {
+    return function() {removeSection(index);};
 }
 
 /**
@@ -43,12 +49,15 @@ function initEditors(editorNr) {
  */
 function addEditor(editorId, toolbarId) {
 
-    var editor = new wysihtml5.Editor(editorId, {
-        toolbar: toolbarId,
-        parserRules: wysihtml5ParserRules
-    });
+    if(editors && numberOfEditors) {
 
-    editors.push(editor);
+        var editor = new wysihtml5.Editor(editorId, {
+            toolbar: toolbarId,
+            parserRules: wysihtml5ParserRules
+        });
+
+        editors.push(editor);
+    }
 }
 
 /**
@@ -59,20 +68,23 @@ function addEditor(editorId, toolbarId) {
  */
 function addEditorAt(editorId, toolbarId, position) {
 
-    var oldEditors = editors;
+    if(editors && numberOfEditors) {
 
-    editors = [];
+        var oldEditors = editors;
 
-    for(var i = 0; i < position; i++) {
-        editors[i] = oldEditors[i];
-    }
+        editors = [];
 
-    addEditor(editorId, toolbarId);
+        for (var i = 0; i < position; i++) {
+            editors[i] = oldEditors[i];
+        }
 
-    numberOfEditors++;
+        addEditor(editorId, toolbarId);
 
-    for(var j = position + 1; j < numberOfEditors; j++) {
-        editors[j] = oldEditors[j];
+        numberOfEditors++;
+
+        for (var j = position + 1; j < numberOfEditors; j++) {
+            editors[j] = oldEditors[j];
+        }
     }
 }
 
@@ -82,7 +94,9 @@ function addEditorAt(editorId, toolbarId, position) {
  */
 function removeEditor(index) {
 
-    editors[index] = null;
+    if(editors && numberOfEditors) {
+        editors[index] = null;
+    }
 }
 
 /**
@@ -91,22 +105,91 @@ function removeEditor(index) {
  */
 function getContentAsJsonString() {
 
-    var sections = [];
+    if(editors && numberOfEditors) {
+        
+        var sections = [];
 
-    for(var i = 0; i < numberOfEditors; i++) {
+        for (var i = 0; i < numberOfEditors; i++) {
 
-        if(editors[i] && editors[i] != null) {
+            if (editors[i] && editors[i] != null) {
 
-            var item = {};
+                var item = {};
 
-            item["section"] = editors[i].getValue(true).trim();
+                item["section"] = editors[i].getValue(true).trim();
 
-            sections.push(item);
+                sections.push(item);
+            }
         }
+
+        var jsonObj = {};
+        jsonObj["content"] = sections;
+
+        return JSON.stringify(jsonObj);
     }
+}
 
-    var jsonObj = {};
-    jsonObj["content"] = sections;
+function removeSection(sectionNr) {
 
-    return JSON.stringify(jsonObj);
+    removeEditor(sectionNr);
+
+    $('#section' + sectionNr).remove();
+
+    console.log('removed editor nr: ' + sectionNr);
+    console.log(editors[sectionNr]);
+}
+
+function addSection() {
+
+    $.get('/Client/out/components/editor-toolbar.html',
+        function(data){
+
+            $('#main-content').append(createJumbotron(data));
+            addEditor('editor' + numberOfEditors, 'toolbar' + numberOfEditors);
+
+            var section = $('#section' + numberOfEditors);
+            section.find('.remove-btn').click(createOnclickFunction(numberOfEditors));
+            section.find('.update-btn').click(function(event) {
+                saveContent(event);
+            });
+            numberOfEditors++;
+
+    }, 'html')
+}
+
+function createJumbotron(toolbar) {
+
+    var jumbotron = document.createElement('div');
+    jumbotron.className = 'jumbotron';
+    jumbotron.id = 'section' + numberOfEditors;
+
+    var container = document.createElement('div');
+    container.className = 'container';
+
+    var row = document.createElement('div');
+    row.className = 'row';
+
+    var editorCol = document.createElement('div');
+    editorCol.className = 'col-lg-12 line-break';
+    editorCol.id = 'editor' + numberOfEditors;
+    editorCol.setAttribute('data-placeholder', 'Neuen Abschnitt hier bearbeiten');
+
+    row.appendChild(editorCol);
+    container.appendChild(row);
+
+    var row2 = document.createElement('div');
+    row2.className = 'row';
+
+    var toolbarCol = document.createElement('div');
+    toolbarCol.id = 'toolbar' + numberOfEditors;
+    toolbarCol.className = 'edy-tb col-lg-12 btn-toolbar';
+    toolbarCol.setAttribute('role', 'toolbar');
+    toolbarCol.innerHTML = toolbar;
+
+    row2.appendChild(toolbarCol);
+    container.appendChild(row2);
+
+    jumbotron.appendChild(container);
+
+    return jumbotron;
+
 }

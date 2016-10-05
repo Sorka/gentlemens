@@ -49,9 +49,12 @@
 
 <jsp:include page="/Client/out/components/navbar.jsp" />
 
-<div class="container">
+<div id="main-content" class="container">
     <div class="page-header">
         <h1>Gentlemens Club</h1>
+        <button class="btn btn-primary pull-right" onclick="addSection();">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
     </div>
 
     <jsp:include page="/Client/out/components/contentLoader.jsp">

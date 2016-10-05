@@ -1,0 +1,30 @@
+<svg width="400" height="400.00000000000006" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="402" height="402" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#fff" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" d="m207.369186,27.920179l65.499863,-24.999989l65.500092,24.999989l-130.999954,0z" id="svg_6" transform="rotate(180, 272.869, 15.4219)"/>
+  <g id="svg_7">
+   <path fill="#000000" stroke="#000" stroke-width="1.5" d="m137.066467,118.997963l24.187866,-109.003714l80.626343,0l24.187439,109.003714l-129.001648,0z" id="svg_1" transform="rotate(180, 201.566, 64.4961)"/>
+   <path fill="#000000" stroke="#000" stroke-width="1.5" stroke-opacity="null" d="m134.216309,223.981476l67.5,-107.329956l67.503326,107.329956l-25.785065,173.670105l-83.435532,0l-25.78273,-173.670105z" id="svg_2" transform="rotate(180, 201.717, 257.152)"/>
+   <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m215.45462,109.505821l59.000214,-100.000011l58.999969,100.000011l-118.000183,0z" id="svg_4" transform="rotate(159, 274.453, 59.5039)"/>
+   <path fill="#fff" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m69.45462,109.505829l59.000214,-100.000019l59,100.000019l-118.000214,0z" id="svg_5" transform="rotate(-159, 128.453, 59.5039)"/>
+   <line fill="none" stroke="#ffffff" stroke-width="1.5" x1="291.003906" y1="151.449997" x2="292.003906" y2="150.449997" id="svg_20" stroke-linejoin="null" stroke-linecap="null"/>
+   <g id="svg_21">
+    <path fill="#444444" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m346.000122,127.883667l-36.868042,-128.775687l-36.020599,142.313056l72.888641,-13.537354l0,-0.000015z" id="svg_12"/>
+    <path fill="#444444" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m344.797363,161.083908l-152.870758,270.520706l90.829071,-323.667465l62.041687,53.146774l0,-0.000015z" id="svg_13"/>
+   </g>
+   <g id="svg_24">
+    <path fill="#444444" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m53.999878,131.052094l38.268219,-132.944193l37.388641,146.919764l-75.65686,-13.975571z" id="svg_22"/>
+    <path fill="#444444" stroke="#000" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" d="m55.248329,165.327026l158.676659,279.277496l-94.278748,-334.144623l-64.397911,54.867142l0,-0.000015z" id="svg_23"/>
+   </g>
+  </g>
+ </g>
+</svg>

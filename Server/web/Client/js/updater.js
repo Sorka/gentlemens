@@ -6,6 +6,10 @@ var successMsg = 'Die Änderungen wurden erfolgreich gespeichert!';
 var failMsg = 'Es ist ein Fehler aufgetreten. Die Änderungen wurden nicht gespeichert!';
 
 $('.update-btn').click(function(event){
+    saveContent(event);
+});
+
+function saveContent(event) {
     event.preventDefault();
     $.post('/update',
         'pageName=' + pageName + '&content=' + getContentAsJsonString(),
@@ -16,7 +20,7 @@ $('.update-btn').click(function(event){
 
         }, "json");
     console.log("content data send with post");
-});
+}
 
 function showAlert(success) {
 

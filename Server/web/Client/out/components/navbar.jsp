@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-                <img class="pull-left" src="/Client/img/logo-transparent.svg" width="50" style="margin-top: -5px; margin-right: 5px;"/>
+                <img class="img-circle pull-left" src="/Client/img/logo-quadratic.svg" width="50" style="margin-top: -13px; margin-right:5px;"/>
                 Gentlemens Club
             </a>
         </div>
