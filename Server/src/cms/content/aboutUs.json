@@ -1,6 +1,7 @@
 {
   "content" : [
-    {"section" : "<h1>Test</h1> <p>Dies ist ein Testeintrag</p>"},
-    {"section" : "<h1>Test</h1> <p>Dies ist noch ein Testeintrag</p>"}
+    {"section" : "<p>Wir sind der Gentlemens Club, wir spielen hygie̱nisch, also sauber und vornehmend. Wir sind resistent gegen wipes und scheuen keine Kosten für ein schicken Anzug!</p><p>Ist ein Gentlemen nicht hügenisch so wird der Gentlemen erinnert warum es wichtig ist sich gut anzuziehen. Das erfolgt (meistens) ohne Körperliche Gewalt</p>"},
+    {"section" : "<p>Wir sind Erfolgsorientiert. Versagen ist keine Option </p><p>Versagen wir doch, so drehen wir es so zurecht das es doch ein Erfolg war</p>"},
+    {"section" : "<p>Ein Gentlemen kümmert sich stets um das wohlergehen einer Lady.</p><p>Auch wenn das heißt sich die Finger schmutzig zu machen</p>"}
   ]
 }

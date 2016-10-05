@@ -13,23 +13,6 @@
     <title>thenewboston</title>
 
     <%@include file="/Client/out/components/headdata.html"%>
-    
-    <style>
-        .jumbotron{
-            background-color: #57575f;
-            color: #ffffff;
-        }
-        /* Adds borders for tabs */
-        .tab-content {
-            border-left: 1px solid #ddd;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            padding: 10px;
-        }
-        .nav-tabs {
-            margin-bottom: 0;
-        }
-    </style>
 </head>
 <body>
 
@@ -39,12 +22,18 @@
     <div class="page-header">
         <h1>Gentlemens Club</h1>
     </div>
-    <div class="jumbotron">
-        <p>Bla Bla Bla</p>
-    </div>
+
+    <jsp:include page="/Client/out/components/contentLoader.jsp">
+        <jsp:param name="pageName" value="pvp"/>
+    </jsp:include>
+
 </div>
 
-<jsp:include page="/Client/out/components/footdata.jsp"/>
+    <jsp:include page="/Client/out/components/footdata.jsp"/>
+
+    <jsp:include page="/Client/out/components/editorJsLoader.jsp">
+        <jsp:param name="pageName" value="pvp"/>
+    </jsp:include>
 
 </body>
 </html>

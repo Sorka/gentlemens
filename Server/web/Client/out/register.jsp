@@ -18,23 +18,6 @@
     <title>thenewboston</title>
 
     <%@include file="/Client/out/components/headdata.html"%>
-
-    <style>
-        .jumbotron{
-            background-color: #57575f;
-            color: #ffffff;
-        }
-        /* Adds borders for tabs */
-        .tab-content {
-            border-left: 1px solid #ddd;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            padding: 10px;
-        }
-        .nav-tabs {
-            margin-bottom: 0;
-        }
-    </style>
 </head>
 <body>
 

@@ -7,42 +7,12 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    Object idAttr = session.getAttribute("userId");
-
-    boolean loggedIn = idAttr != null && User.isLoggedIn(idAttr, session.getId());
-    boolean isAdmin = loggedIn && User.getUser(idAttr).getRank().equals(Rank.ADMINISTRATOR);
-
-    int editorNr = 0;
-
-%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Gentlemens Club - Rekrutierung</title>
 
     <%@include file="/Client/out/components/headdata.html"%>
-
-    <style>
-        .jumbotron{
-            background-color: #7c7c84;
-            color: #ffffff;
-        }
-        /* Adds borders for tabs */
-        .tab-content {
-            border-left: 1px solid #ddd;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            padding: 10px;
-        }
-        .nav-tabs {
-            margin-bottom: 0;
-        }
-        .jumbotrontwo{
-            background-color: #57575f;
-            color: #ffffff;
-        }
-    </style>
 </head>
 <body>
 

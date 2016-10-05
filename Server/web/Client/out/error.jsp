@@ -6,12 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Fehler beim Seitenaufruf</title>
 
     <%@include file="components/headdata.html" %>
-
 </head>
 <body>
 
