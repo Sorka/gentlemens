@@ -9,14 +9,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gentlemens Club</title>
-    
+    <title>nicht thenowboston hahaha</title>
+
     <%@include file="components/headdata.html"%>
 </head>
 <body>
 
 <jsp:include page="/Client/out/components/navbar.jsp">
-    <jsp:param name="pageName" value="index"/>
+    <jsp:param name="pageName" value="board"/>
 </jsp:include>
 
 <div class="container-fluid">
@@ -28,16 +28,18 @@
     </div>
 
     <jsp:include page="/Client/out/components/contentLoader.jsp">
-        <jsp:param name="pageName" value="index"/>
+        <jsp:param name="pageName" value="board"/>
     </jsp:include>
 
 </div>
 
-    <jsp:include page="/Client/out/components/footdata.jsp"/>
+<jsp:include page="/Client/out/components/footdata.jsp">
+    <jsp:param name="pageName" value="board"/>
+</jsp:include>
 
-    <jsp:include page="/Client/out/components/editorJsLoader.jsp">
-        <jsp:param name="pageName" value="index"/>
-    </jsp:include>
+<jsp:include page="/Client/out/components/editorJsLoader.jsp">
+    <jsp:param name="pageName" value="board"/>
+</jsp:include>
 
 </body>
 </html>

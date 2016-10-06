@@ -24,9 +24,10 @@
 
         size = content.size();
     }
+
 %>
 
-<% if(loggedIn && isAdmin) {%>
+<% if((loggedIn && isAdmin) || (loggedIn && pageName.equals("board"))) {%>
 <script type="text/javascript" src="/Client/js/editorUtils.js"></script>
 <script type="text/javascript">
 

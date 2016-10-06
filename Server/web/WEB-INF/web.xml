@@ -83,4 +83,14 @@
         <servlet-name>register</servlet-name>
         <url-pattern>/registration</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>board</servlet-name>
+        <jsp-file>/Client/out/board.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>board</servlet-name>
+        <url-pattern>/board</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -138,20 +138,34 @@ function removeSection(sectionNr) {
     console.log(editors[sectionNr]);
 }
 
-function addSection() {
+function addSection(asFirst) {
 
     $.get('/Client/out/components/editor-toolbar.html',
         function(data){
 
-            $('#main-content').append(createJumbotron(data));
-            addEditor('editor' + numberOfEditors, 'toolbar' + numberOfEditors);
+            if(asFirst && asFirst == true) {
+                $('#main-content').prepend(createJumbotron(data));
+                addEditorAt('editor' + numberOfEditors, 'toolbar' + numberOfEditors, 0);
 
-            var section = $('#section' + numberOfEditors);
-            section.find('.remove-btn').click(createOnclickFunction(numberOfEditors));
-            section.find('.update-btn').click(function(event) {
-                saveContent(event);
-            });
-            numberOfEditors++;
+                var section = $('#section' + (numberOfEditors - 1));
+                section.find('.remove-btn').click(createOnclickFunction(numberOfEditors));
+                section.find('.update-btn').click(function(event) {
+                    saveContent(event);
+                });
+
+                console.log(numberOfEditors);
+
+            } else {
+                $('#main-content').append(createJumbotron(data));
+                addEditor('editor' + numberOfEditors, 'toolbar' + numberOfEditors);
+
+                var section = $('#section' + numberOfEditors);
+                section.find('.remove-btn').click(createOnclickFunction(numberOfEditors));
+                section.find('.update-btn').click(function(event) {
+                    saveContent(event);
+                });
+                numberOfEditors++;
+            }
 
     }, 'html')
 }

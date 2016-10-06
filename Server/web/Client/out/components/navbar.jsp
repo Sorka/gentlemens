@@ -9,6 +9,12 @@
 <%
     Object idAttr = session.getAttribute("userId");
 
+    String pageName = request.getParameter("pageName");
+
+    if(pageName == null) {
+        pageName = "default";
+    }
+
     boolean loggedIn = idAttr != null && User.isLoggedIn(idAttr, session.getId());
 
     User user = null;
@@ -38,15 +44,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="/aboutus">&Uuml;ber uns</a></li>
-                <li><a href="/recruit">Rekrutierung</a></li>
-                <li class="dropdown">
+                <li <%if(pageName.equals("aboutUs")) {%> <%= "class=\"active\""%> <%}%>><a href="/aboutus">&Uuml;ber uns</a></li>
+                <li <%if(pageName.equals("recruit")) {%> <%= "class=\"active\""%> <%}%>><a href="/recruit">Rekrutierung</a></li>
+                <li class="dropdown <%if(pageName.equals("pvp") || pageName.equals("pve")) {%> <%= "active"%> <%}%>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Spielrichtungen <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/pvp">PvP</a></li>
-                        <li><a href="/pve">PvE</a></li>
+                        <li <%if(pageName.equals("pvp")) {%> <%= "class=\"active\""%> <%}%>><a href="/pvp">PvP</a></li>
+                        <li <%if(pageName.equals("pve")) {%> <%= "class=\"active\""%> <%}%>><a href="/pve">PvE</a></li>
                     </ul>
                 </li>
+                <li <%if(pageName.equals("board")) {%> <%= "class=\"active\""%> <%}%>><a href="/board">Board</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <% if(!loggedIn) { %>

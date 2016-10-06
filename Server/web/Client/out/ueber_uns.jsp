@@ -10,15 +10,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Über uns </title>
+    <title>Gentlemens Club - Über uns </title>
 
     <%@include file="/Client/out/components/headdata.html"%>
 </head>
 <body>
 
-<jsp:include page="/Client/out/components/navbar.jsp" />
+<jsp:include page="/Client/out/components/navbar.jsp">
+    <jsp:param name="pageName" value="aboutUs"/>
+</jsp:include>
 
-<div class="container">
+<div class="container-fluid">
     <div class="page-header">
         <h1>Gentlemens Club</h1>
     </div>

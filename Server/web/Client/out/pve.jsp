@@ -10,15 +10,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>thenewboston</title>
+    <title>Gentlemens Club - PvE</title>
 
     <%@include file="/Client/out/components/headdata.html"%>
 </head>
 <body>
 
-<jsp:include page="/Client/out/components/navbar.jsp" />
+<jsp:include page="/Client/out/components/navbar.jsp">
+    <jsp:param name="pageName" value="pve"/>
+</jsp:include>
 
-<div id="main-content" class="container">
+<div id="main-content" class="container-fluid">
     <div class="page-header">
         <h1>Gentlemens Club</h1>
     </div>

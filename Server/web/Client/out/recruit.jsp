@@ -16,9 +16,11 @@
 </head>
 <body>
 
-<jsp:include page="/Client/out/components/navbar.jsp" />
+<jsp:include page="/Client/out/components/navbar.jsp">
+    <jsp:param name="pageName" value="recruit"/>
+</jsp:include>
 
-<div class="container">
+<div class="container-fluid">
     <div class="page-header">
         <h1>Gentlemens Club</h1>
     </div>

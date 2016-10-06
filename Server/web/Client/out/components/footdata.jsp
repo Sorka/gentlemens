@@ -12,6 +12,9 @@
 
     boolean loggedIn = idAttr != null && User.isLoggedIn(idAttr, session.getId());
     boolean isAdmin = loggedIn && User.getUser(idAttr).getRank().equals(Rank.ADMINISTRATOR);
+    String pageName = request.getParameter("pageName");
+    if(pageName==null)
+        pageName = "default";
 
 %>
 <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--%>
@@ -23,7 +26,7 @@
 
     <script src="/Client/js/logout.js" type="text/javascript"></script>
 
-    <% if(isAdmin)  { %>
+    <% if(isAdmin || pageName.equals("board"))  { %>
 
     <!-- wysihtml core javascript with default toolbar functions -->
     <script src="/Client/wysihtml-0.5.5/dist/wysihtml-toolbar.min.js" type="text/javascript"></script>
