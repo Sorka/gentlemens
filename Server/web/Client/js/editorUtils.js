@@ -23,10 +23,10 @@ function initEditors(editorNr) {
 
     if(editorNr) {
 
-        numberOfEditors = editorNr;
+        numberOfEditors = 0;
         editors = [];
 
-        for(var i = 0; i < numberOfEditors; i++) {
+        for(var i = 0; i < editorNr; i++) {
 
             var editorId = 'editor' + i;
             var toolbarId = 'toolbar' + i;
@@ -35,6 +35,7 @@ function initEditors(editorNr) {
 
             $('#section' + i).find('.remove-btn').click(createOnclickFunction(i));
         }
+        console.log(numberOfEditors);
     }
 }
 
@@ -49,15 +50,20 @@ function createOnclickFunction(index) {
  */
 function addEditor(editorId, toolbarId) {
 
-    if(editors && numberOfEditors) {
+    if(editors && numberOfEditors !== undefined) {
 
-        var editor = new wysihtml5.Editor(editorId, {
-            toolbar: toolbarId,
-            parserRules: wysihtml5ParserRules
-        });
+        editors.push(createEditor(editorId, toolbarId));
 
-        editors.push(editor);
+        numberOfEditors++;
     }
+}
+
+function createEditor(editorId, toolbarId) {
+
+    return new wysihtml5.Editor(editorId, {
+        toolbar: toolbarId,
+        parserRules: wysihtml5ParserRules
+    });
 }
 
 /**
@@ -70,7 +76,7 @@ function addEditorAt(editorId, toolbarId, position) {
 
     if(editors && numberOfEditors) {
 
-        var oldEditors = editors;
+        /*var oldEditors = editors;
 
         editors = [];
 
@@ -84,7 +90,11 @@ function addEditorAt(editorId, toolbarId, position) {
 
         for (var j = position + 1; j < numberOfEditors; j++) {
             editors[j] = oldEditors[j];
-        }
+        }*/
+
+        editors.splice(position, 0, createEditor(editorId, toolbarId));
+
+        numberOfEditors++;
     }
 }
 
@@ -143,29 +153,26 @@ function addSection(asFirst) {
     $.get('/Client/out/components/editor-toolbar.html',
         function(data){
 
+            console.log(numberOfEditors);
+
+            var jumbotron = createJumbotron(data);
+
+            var section = $(jumbotron);
+            section.find('.remove-btn').click(createOnclickFunction(numberOfEditors));
+            section.find('.update-btn').click(function(event) {
+                saveContent(event);
+            });
+
             if(asFirst && asFirst == true) {
-                $('#main-content').prepend(createJumbotron(data));
+                $('#main-content').prepend(jumbotron);
                 addEditorAt('editor' + numberOfEditors, 'toolbar' + numberOfEditors, 0);
 
-                var section = $('#section' + (numberOfEditors - 1));
-                section.find('.remove-btn').click(createOnclickFunction(numberOfEditors));
-                section.find('.update-btn').click(function(event) {
-                    saveContent(event);
-                });
-
-                console.log(numberOfEditors);
-
             } else {
-                $('#main-content').append(createJumbotron(data));
+                $('#main-content').append(jumbotron);
                 addEditor('editor' + numberOfEditors, 'toolbar' + numberOfEditors);
-
-                var section = $('#section' + numberOfEditors);
-                section.find('.remove-btn').click(createOnclickFunction(numberOfEditors));
-                section.find('.update-btn').click(function(event) {
-                    saveContent(event);
-                });
-                numberOfEditors++;
             }
+            console.log(numberOfEditors);
+            console.log(editors);
 
     }, 'html')
 }
